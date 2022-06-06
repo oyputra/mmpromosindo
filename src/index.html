@@ -205,9 +205,9 @@
                             <img src="/asset/images/Bill Boar Promosi.jpg" class="block brightness-50 absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                             <h1 class="md:text-3xl text-sm absolute xl:inset-36 md:inset-24 inset-16 text-center text-white">Dapatkan Promo Terbaik</h1>
                             <form>
-                                <input type="hidden" name="phone" id="phone" class="form-control" value="62811158191">
-                                <input type="hidden" name="text" id="text" class="form-control" value="Hallo, Masih adakah promo terbaiknya?">
-                                <button type="button" id="send" class="group flex items-center justify-center absolute xl:inset-56 md:inset-40 inset-32 text-center">
+                                <input type="hidden" name="phone1" id="phone1" class="form-control" value="62811158191">
+                                <input type="hidden" name="text1" id="text1" class="form-control" value="Hallo, Masih adakah promo terbaiknya?">
+                                <button type="button" id="send1" class="group flex items-center justify-center absolute xl:inset-56 md:inset-40 inset-32 text-center">
                                     <span class="rounded md:text-base text-xs md:py-2 py-1 md:px-5 px-2 bg-transparent border border-gray-50 text-gray-50 group-hover:bg-red-900 group-hover:text-white group-hover:border-0 transition">
                                         Sekarang
                                     </span>
@@ -219,9 +219,9 @@
                             <img src="/asset/images/Bill Boar Promosi.jpg" class="block brightness-50 absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                             <h1 class="md:text-3xl text-sm absolute xl:inset-36 md:inset-24 inset-16 text-center text-white">Dapatkan Promo Terbaik</h1>
                             <form>
-                                <input type="hidden" name="phone" id="phone" class="form-control" value="62811158191">
-                                <input type="hidden" name="text" id="text" class="form-control" value="Hallo, Masih adakah promo terbaiknya?">
-                                <button type="button" id="send" class="group flex items-center justify-center absolute xl:inset-56 md:inset-40 inset-32 text-center">
+                                <input type="hidden" name="phone2" id="phone2" class="form-control" value="62811158191">
+                                <input type="hidden" name="text2" id="text2" class="form-control" value="Hallo, Masih adakah promo terbaiknya?">
+                                <button type="button" id="send2" class="group flex items-center justify-center absolute xl:inset-56 md:inset-40 inset-32 text-center">
                                     <span class="rounded md:text-base text-xs md:py-2 py-1 md:px-5 px-2 bg-transparent border border-gray-50 text-gray-50 group-hover:bg-red-900 group-hover:text-white group-hover:border-0 transition">
                                         Sekarang
                                     </span>
@@ -233,9 +233,9 @@
                             <img src="/asset/images/Bill Boar Promosi.jpg" class="block brightness-50 absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                             <h1 class="md:text-3xl text-sm absolute xl:inset-36 md:inset-24 inset-16 text-center text-white">Dapatkan Promo Terbaik</h1>
                             <form>
-                                <input type="hidden" name="phone" id="phone" class="form-control" value="62811158191">
-                                <input type="hidden" name="text" id="text" class="form-control" value="Hallo, Masih adakah promo terbaiknya?">
-                                <button type="button" id="send" class="group flex items-center justify-center absolute xl:inset-56 md:inset-40 inset-32 text-center">
+                                <input type="hidden" name="phone3" id="phone3" class="form-control" value="62811158191">
+                                <input type="hidden" name="text3" id="text3" class="form-control" value="Hallo, Masih adakah promo terbaiknya?">
+                                <button type="button" id="send3" class="group flex items-center justify-center absolute xl:inset-56 md:inset-40 inset-32 text-center">
                                     <span class="rounded md:text-base text-xs md:py-2 py-1 md:px-5 px-2 bg-transparent border border-gray-50 text-gray-50 group-hover:bg-red-900 group-hover:text-white group-hover:border-0 transition">
                                         Sekarang
                                     </span>
@@ -954,44 +954,45 @@
         AOS.init();
     </script>
 
-    <!-- JS Video Visible Autoplay -->
-    <script>
-        window.addEventListener('load', videoScroll);
-        window.addEventListener('scroll', videoScroll);
-
-        function videoScroll() {
-
-        if ( document.querySelectorAll('video[autoplay]').length > 0) {
-            var windowHeight = window.innerHeight,
-                videoEl = document.querySelectorAll('video[autoplay]');
-
-            for (var i = 0; i < videoEl.length; i++) {
-
-            var thisVideoEl = videoEl[i],
-                videoHeight = thisVideoEl.clientHeight,
-                videoClientRect = thisVideoEl.getBoundingClientRect().top;
-
-            if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
-                thisVideoEl.play();
-            } else {
-                thisVideoEl.pause();
-            }
-
-            }
-        }
-
-        }
-    </script>
-
     <!-- JS Flowbite -->
     <script src="https://unpkg.com/flowbite@1.4.6/dist/flowbite.js"></script>
 
     <!-- JS Scroll To Top -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!-- JS Tailwind Elements -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
    
-   <!-- Messgae WhatsApp -->
    <script>
+        // JS Video Visible Autoplay 
+        window.addEventListener('load', videoScroll);
+        window.addEventListener('scroll', videoScroll);
+
+        function videoScroll() {
+
+            if ( document.querySelectorAll('video[autoplay]').length > 0) {
+                var windowHeight = window.innerHeight,
+                    videoEl = document.querySelectorAll('video[autoplay]');
+
+                for (var i = 0; i < videoEl.length; i++) {
+
+                var thisVideoEl = videoEl[i],
+                    videoHeight = thisVideoEl.clientHeight,
+                    videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+                if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+                    thisVideoEl.play();
+                } else {
+                    thisVideoEl.pause();
+                }
+
+                }
+            }
+
+        }
+
+        // Messgae WhatsApp
         $(document).ready(function(){
             var btnSend = $('#send');
             btnSend.click(function (){
@@ -1005,9 +1006,48 @@
                 var win = window.open(url , '_blank');
                 win.focus();
             });
+            
+            var btnSend = $('#send1');
+            btnSend.click(function (){
+                var phone = $('#phone1').val();
+                if (!phone) {
+                    swal('Please enter a phone number');
+                    return;
+                }
+                var text = $('#text1').val();
+                var url = 'http://api.whatsapp.com/send?phone='+ phone + '&text=' + text;
+                var win = window.open(url , '_blank');
+                win.focus();
+            });
+
+            var btnSend = $('#send2');
+            btnSend.click(function (){
+                var phone = $('#phone2').val();
+                if (!phone) {
+                    swal('Please enter a phone number');
+                    return;
+                }
+                var text = $('#text2').val();
+                var url = 'http://api.whatsapp.com/send?phone='+ phone + '&text=' + text;
+                var win = window.open(url , '_blank');
+                win.focus();
+            });
+
+            var btnSend = $('#send3');
+            btnSend.click(function (){
+                var phone = $('#phone3').val();
+                if (!phone) {
+                    swal('Please enter a phone number');
+                    return;
+                }
+                var text = $('#text3').val();
+                var url = 'http://api.whatsapp.com/send?phone='+ phone + '&text=' + text;
+                var win = window.open(url , '_blank');
+                win.focus();
+            });
         });
 
-        //Get the button
+        // Get the button
         var mybutton = document.getElementById("myBtn");
         
         // When the user scrolls down 20px from the top of the document, show the button
@@ -1048,8 +1088,5 @@
         setTimeout(showSlides, 1000); // Change image every 2 seconds
         }
     </script>
-
-    <!-- JS Tailwind Elements -->
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
